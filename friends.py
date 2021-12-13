@@ -18,7 +18,7 @@ def render_template_email(**kwargs):
 #Using AWS Simple Email Service to send the emails
 def send_ses(to, subj, body):
     CHARSET = "UTF-8"
-    SENDER = "nuzzo.salvatore@gmail.com"
+    SENDER = "YOUR.EMAIL@gmail.com"
     AWS_REGION = "us-east-1"
     client = boto3.client('ses',region_name=AWS_REGION)
     #Try to send the email.
