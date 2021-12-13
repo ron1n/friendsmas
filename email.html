@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+P { 
+	text-align: center 
+}
+
+H2 { 
+	text-align: center 
+}
+
+
+IMG {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+</style>
+</head>
+<body>
+
+<p>Hey {{ name }}!</p>
+<p>You've been invited to our Christmas party!</p>
+<p>It's going to be Saturday 12/18 @ 15:00</p>
+<p>Click <a href="https://www.google.com/maps/place/">HERE</a> for directions</p>
+<p>Now for the secret Santa reveal....</p>
+<p>Lucky you! You got </p><h2>{{ pair }}</h2><p> for Secret Santa!</p>
+<p>I know what you're thinking. WHAT THE FUCK DO I GET THEM!?</p>
+<p>WHAT DOES </p><h2>{{ pair }}</h2><p> EVEN LIKE!?</p>
+<p>Fear not!</p>
+<p>They have indicated they're interested in the following:</p>
+<p> {{ wishlist }}</p>
+<p>They definitely don't need any more of the following:</p> 
+<p>{{ blacklist }}</p>
+<p>And if they have any allergies, they'll be listed here:</p>
+<p>{{ allergies | default("Nope, no allergies.", true)}}</p>
+<p>See you then!</p>
+<p><h2>~ Sal and Christina</h2></p>
+<img src=https://hosted-static-content.s3.amazonaws.com/small.png>
+</body>
+</html>
