@@ -117,7 +117,7 @@ def match_friends(friend_list):
     #Quick hack to take the tail of the list and feed it the head as its pair
     friend_list[len(friend_list) - 1].pair = friend_list[0].name
     return friend_list
-    
+
 
 def main():
     #From inside out - load the friends into a list and pass it to the match_friends function so we have a list with pairs
